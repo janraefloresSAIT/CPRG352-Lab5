@@ -9,9 +9,10 @@
     <body>
         <h1>Login</h1>
 
-        <form method="" action="">
+        <form method="POST" action="login">
             <label>Username: </label>
             <input type="text" name="username" value="${username}">
+            <br>
             <label>Password: </label>
             <input type="text" name="password" value="${password}">
 
@@ -20,5 +21,6 @@
             <input type="submit" value="Log in">
         </form>
         <p>${logoutMessage}</p>
+        <p>${message}</p>
     </body>
 </html>
