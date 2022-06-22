@@ -1,5 +1,6 @@
 package Servlets;
 
+import Services.AccountSerivce;
 import Models.User;
 import java.io.IOException;
 import javax.servlet.ServletException;
@@ -47,7 +48,7 @@ public class LoginServlet extends HttpServlet {
         User user;
 
         if (username != null && password != null) {
-            AccountService account = new AccountService();
+            AccountSerivce account = new AccountSerivce();
             user = account.login(username, password);
 
             if (user != null) {
